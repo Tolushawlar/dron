@@ -1,7 +1,6 @@
 import {
   FaBook,
   FaChartPie,
-  FaLightbulb,
   FaTicketAlt,
   FaUsers,
   FaUserTie,
