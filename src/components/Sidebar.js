@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {styled, useStyletron} from 'baseui';
-
+import { Link, useNavigate } from "react-router-dom";
 import logo from '../assets/images/logo.svg'
 import SideNavListItem from './SidebarNavItem';
 import { menuData } from '../assets/constant';
@@ -11,7 +11,7 @@ import { menuData } from '../assets/constant';
 const Sidebar = ({open, setOpen}) => {
 
     const [css] = useStyletron();
-
+    let navigate = useNavigate();
     return (
         <SidebarWrapper className={css({
             '@media (max-width: 768px)': {
@@ -46,7 +46,7 @@ const Sidebar = ({open, setOpen}) => {
             {
                 menuData.map(({ icon, title, active }, index) => (
                     <SideNavListItem key={index} active={active} title={title}>
-                        {icon}
+                        <Link to={title}>{icon}</Link>
                     </SideNavListItem>
                 ))
             }

@@ -1,0 +1,23 @@
+.RouteHeader{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.routePic .secPix {
+    display: flex;
+    padding: 150px;
+    justify-content: space-between;
+}
+
+.routePic .secPix .innerPix p{
+    position: relative;;
+    top: -90px;
+    left:40px;
+    background-color: grey;
+    padding: 20px;
+    width: 60px;
+    height: 20px;
+    overflow: hidden
+}

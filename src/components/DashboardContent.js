@@ -26,6 +26,7 @@ const DashboardContent = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            
         })}>
             <LabelSmall>All Hotels</LabelSmall>
             <div className={css({
@@ -38,7 +39,7 @@ const DashboardContent = () => {
                     alignItems: 'center',
                 })}><Filter size='2rem' className={css({
                     marginRight: '0.3rem',
-                })} />Filter</ParagraphMedium>
+                })} /><a href='http://localhost:3001/dashboard/hotels/addHotel'>Add Hotel</a></ParagraphMedium>
             </div>
         </div>
         <Table
